@@ -99,3 +99,58 @@ Add two arrays and sort it
 chromedriver an interface
 Alerts handling
 Java program to convert lower case to upper case for a String(StrinG)
+
+
+1. There is a test automation running and fails 14%, say 1/7 times? How you will debug? There is no code change or test code change.
+Compare fail pattern to input data for correlation or check error log for stability issues (object not found/timing issues).
+1 out of 7? Day of the week related? - Check run date for test, compare to calendar.
+Is there a fail pattern? Does it literally fail every 7th time or just averages to fail 1/7 of the time? Error log and execution logs are crucial.
+
+2. How to automate Shadow DOM & Nested Shadow DOM elements in selenium?
+We can’t access the shadow dom elements like other web elements.
+
+Like driver.findElement(..) can’t be used directly to handle shadow dom elements.
+
+Here first we need to locate the host element of shadow root then
+Get the access of shadow dom using JS through host element, it can be called as last element.
+Now shadow dom elements can be accessed using this last element.
+
+
+
+3. Maven settings.xml file
+
+In maven settings.xml file usually contains elements used to define values that configure Maven execution in various ways, like the pom.xml. This file should not be bundled to any specific project, or should not be distributed to an audience.
+This file mainly includes values such as the local repository path, alternate remote repository servers, profiles, and authentication information, etc..
+There are mainly two locations where a settings.xml file may reside.
+The Maven install: ${maven.home}/conf/settings.xml (Global Setting)
+A user’s install: ${user.home}/.m2/settings.xml (User settings)
+If both files exist then their contents get merged together, with the user-specific settings.xml being dominant.
+
+
+
+4. Write a program to print all permutations of a given string
+A permutation also called an “arrangement number” or “order,” is a rearrangement of the elements of an ordered list S into a one-to-one correspondence with S itself. A string of length n has n! permutation. 
+
+Below are the permutations of string ABC. 
+ABC ACB BAC BCA CBA CAB
+
+
+
+5. Automation Testing Question:
+How do you verify a search result list which changes consistently based on each search word and filters?
+
+For example, how do you make sure that the list is sorted based on price or rating or etc without any identical list to compare with? Since providing an identical list as Test Input for each word is not the best approach.
+
+
+
+6. What is a binary tree 
+
+A tree whose elements have at most 2 children is called a binary tree. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.
+
+Binary Tree Data Structure
+
+A Binary Tree node contains the following parts.
+
+Data
+Pointer to left child
+Pointer to right child
